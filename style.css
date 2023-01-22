@@ -52,6 +52,7 @@ body{
     background-color: rgba(18, 26, 36, 0.856);
     background-blend-mode: overlay;
     transition: all 1s cubic-bezier(0.44, 0.19, 0.51, 0.9);
+    z-index: 5;
 }
 .row2{
     grid-row: span 2;
@@ -95,4 +96,26 @@ body{
     top: 440px;
     left: 114px;
     z-index: 3;
+}
+
+@media screen and (max-width: 768px){
+    .left{
+        margin: 2px 10px;
+        padding: 2px 5px;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .grid-container{
+        width: 90%;
+        margin: 0px 10px;
+        padding: 0px 10px;
+        
+    }
+    .c1{
+        top: -5px;
+        left: 10px;
+    }
 }
